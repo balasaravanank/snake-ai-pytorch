@@ -3,11 +3,11 @@
 This repo implements the classic Snake game and a simple Deep Q-Learning (DQN-style) agent in PyTorch that learns to play it.
 
 **What’s inside**
-- `game.py`: Snake game environment used for training (state, rewards, collisions)
-- `agent.py`: training loop + epsilon-greedy action selection
-- `model.py`: PyTorch model (`Linear_QNet`) and trainer (`QTrainer`)
-- `helper.py`: plotting/training visualization helpers
-- `snake_game_human.py`: play Snake as a human with keyboard
+- `snake_env.py`: Snake game environment used for training (state, rewards, collisions)
+- `train.py`: training loop + epsilon-greedy action selection
+- `dqn_model.py`: PyTorch model (`Linear_QNet`) and trainer (`QTrainer`)
+- `plot_utils.py`: plotting/training visualization helpers
+- `play_human.py`: play Snake as a human with keyboard
 
 ## Requirements
 
@@ -49,13 +49,13 @@ uv pip install -r requirements.txt
 ### Train the AI agent
 
 ```powershell
-uv run python agent.py
+uv run python train.py
 ```
 
 ### Play as a human
 
 ```powershell
-uv run python snake_game_human.py
+uv run python play_human.py
 ```
 
 ## Notes
